@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/index.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>CatalystCode</title>
+</head>
+
+<body class='bg-[#141414]'>
+    <header id="Home-Header" class="flex justify-between pl-10 pr-10 pt-2 pb-2 max-[800px]:pl-[15px] max-[800px]:pr-[15px] bg-[#161616]">
+        <a href=""><img src="./assets/CatalystCodeICON.png"/></a>
+        <nav class="flex gap-5 justify-center items-center group font-medium text-[#C8C8C8] text-[14px]">
+            <a href="" class="max-[800px]:hidden">Home</a>
+            <a href="#Projects" class="max-[800px]:hidden">Projetos</a>
+            <a href="#sobre-nos" class="max-[800px]:hidden">Sobre Nós</a>
+            <a href="#Contact-us" class="max-[800px]:hidden">Contato</a>
+            <a href="#Serviços" class="text-[#8B8B8B] border-solid border-[0.8px]
+                border-[#444444] w-24 h-8 rounded-md flex items-center justify-center gap-2">Serviços <img src="./assets/Arrow.svg" />
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home" class="flex flex-col pl-10 pr-10 gap-[80px] max-[760px]:pl-[15px] max-[760px]:pr-[15px]" style="padding-top: 110px;">
+            <div id="Home-Content" class="flex flex-row flex-wrap justify-between gap-[40px] invisible
+                max-[760px]:justify-center max-[760px]:items-center">
+                <div id="Home-left" class="Home-left flex flex-col gap-[45px]">
+                    <div class="flex flex-col gap-5">
+                        <h1 class="bg-gradient-to-br from-[#FF3B3B] to-[#DD2323]
+                        text-transparent bg-clip-text font-sans font-bold text-[40px]">CatalystCode</h1>
+                        <h2 class="font-display text-[#EDEDED] text-[24px] max-w-[360px] ">Transformando suas ideias em
+                            realidade digital.</h2>
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <p class="text-[#8B8B8B] text-[20px] max-w-[510px] ">&lt;Desenvolvimento de software
+                            personalizado e
+                            soluções inovadoras para impulsionar o seu negócio
+                            <span>.</span>/&gt;
+                        </p>
+                        <svg width="6" height="32">
+                            <rect y="0" x="0" width="6" height="32" fill="#1C1C1C" />
+                        </svg>
+                        <a href="#Contact-us" class="text-[#8B8B8B] text-[16px] border-solid border-[1px] border-[#444444]
+                        w-[240px] h-[50px] rounded-md flex items-center justify-center gap-2">
+                            Solicitar Orçamento<img src="./assets/Arrow.svg" />
+                        </a>
+                    </div>
+                    <div id="Beneficios-home" class="Beneficios-home flex" style="gap: 40px;">
+                        <div class="flex gap-[5px] items-center">
+                            <svg width="6" height="21">
+                                <rect x="0" y="0" width="5" height="20" fill="#1C1C1C" />
+                            </svg>
+                            <p class="text-[#8B8B8B] text-[16px]">Qualidade Garantida.</p>
+                            <img src="./assets/CheckIcon.png" />
+                        </div>
+                        <div class="flex gap-[5px] items-center">
+                            <svg width="6" height="21">
+                                <rect x="0" y="0" width="5" height="20" fill="#1C1C1C" />
+                            </svg>
+                            <p class="text-[#8B8B8B] text-[16px]">Entrega Pontual.</p>
+                            <img src="./assets/CheckIcon.png" />
+                        </div>
+                        <div class="flex gap-[5px] items-center max-[400px]:invisible">
+                            <svg width="6" height="21">
+                                <rect x="0" y="0" width="5" height="20" fill="#1C1C1C" />
+                            </svg>
+                            <p class="text-[#8B8B8B] text-[16px]">Inovação Constante.</p>
+                            <img src="./assets/CheckIcon.png" />
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/HomeBanner.svg" class="Home-banner max-w-[500px] w-full invisible" />
+            </div>
+            <div id="home-bottom-bar" class="Home-bottom-bar bg-[url('./assets/HomeBottomBar.svg')] bg-no-repeat invisible
+                bg-cover bg-center  h-[160px] w-full  justify-center items-center flex">
+                <div class="flex items-center gap-[55px] max-[500px]:gap-[30px]">
+                    <span class="text-[#242424] text-[20px] max-[400px]:text-[17px]">Websites</span>
+                    <span class="text-[#242424] text-[20px] max-[400px]:text-[17px]">Apps Mobile</span>
+                    <span class="text-[#242424] text-[20px] max-[400px]:text-[17px]">Design Ui/UX</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="porque-nos-escolher" class="porque-nos-escolher flex flex-col gap-[75px] px-[15px]">
+            <div class="flex flex-col gap-[20px] pt-[80px] justify-center items-center">
+                <h2 class="font-display text-[24px] text-[#EDEDED] font-semibold text-center">Por que Nos Escolher<span
+                    style="color: #DD2323;"> ?</span></h2>
+                <p class="font-sans text-[16px] max-w-[610px] text-center text-[#8B8B8B]">
+                    Competência, Personalização e Compromisso: Razões para Escolher a CatalystCode.
+                </p>
+            </div>
+            <div class="pb-[80px] flex gap-[60px] flex-wrap justify-center items-center">
+
+                <div class="SN-box flex flex-col gap-[30px] justify-center items-center w-[385px] h-[270px] border-solid border-[1px] border-[#202020] ">
+                    <img src="./assets/LampICON.svg"/>
+                    <h1 class="font-sans text-[20px] text-white text-center">Soluções Personalizadas</h1>
+                    <p class="font-sans text-[16px] text-[#8B8B8B] text-center max-w-[300px]">
+                        Projetos personalizados que atendem
+                        às suas necessidades e refletem a
+                        identidade da sua empresa.
+                    </p>
+                </div>
+
+                <div class="SN-box flex flex-col gap-[30px] justify-center items-center w-[385px] h-[270px] border-solid border-[1px] border-[#202020] ">
+                    <img src="./assets/RocketICON.svg"/>
+                    <h1 class="font-sans text-[20px] text-white text-center">Entregas Dentro do Prazo</h1>
+                    <p class="font-sans text-[16px] text-[#8B8B8B] text-center max-w-[300px]">
+                        Comprometemo-nos a cumprir prazos rigorosos,
+                        mantendo sempre a qualidade e eficiência em
+                        cada etapa do desenvolvimento.
+                    </p>
+                </div>
+
+                <div class="SN-box flex flex-col gap-[30px] justify-center items-center w-[385px] h-[270px] border-solid border-[1px] border-[#202020] ">
+                    <img src="./assets/ConfigICON.svg"/>
+                    <h1 class="font-sans text-[20px] text-white text-center">Expertise Técnica</h1>
+                    <p class="font-sans text-[16px] text-[#8B8B8B] text-center max-w-[300px]">
+                        Nossa equipe domina as tecnologias mais
+                        recentes, garantindo soluções de alta
+                        qualidade e compatíveis com as demandas
+                        atuais do mercado.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nos" class="sobre-nos pt-[80px] pb-[80px] invible">
+                    <div class="bg-[#171717] rounded-[60px] pt-[80px] pb-[80px] px-[15px] flex flex-col justify-center items-center gap-[75px]">
+                        <div class="sobre-nos-content flex flex-col gap-[20px]">
+                            <h2 class="font-display text-[24px] text-[#EDEDED] font-semibold text-center">Sobre Nós<span
+                                style="color: #DD2323;"> :</span></h2>
+                            <p class="font-sans text-[16px] max-w-[860px] text-center text-[#8B8B8B]">
+                                Na CatalystCode, somos uma equipe apaixonada de desenvolvedores
+                                dedicados a criar soluções de software personalizadas para
+                                atender às necessidades exclusivas do seu negócio. Combinamos
+                                criatividade, tecnologia de ponta e um compromisso inabalável
+                                com a qualidade para transformar suas ideias em realidade digital.
+                                Nosso objetivo é impulsionar seu sucesso, oferecendo inovação e eficiência em cada projeto .
+                            </p>
+                        </div>
+                        <img class="sobre-nos-banner" src="./assets/SobreNos.svg"/>
+                    </div>
+        </section>
+
+        <section id="Serviços" class="Serviços flex flex-col gap-[75px] pl-[40px] pr-[40px] pt-[80px] pb-[80px] justify-center items-center w-full">
+                    <h2 class="font-display text-[24px] text-[#EDEDED] font-semibold text-center">Serviços<span
+                        style="color: #DD2323;"> :</span>
+                    </h2>
+                    <div class="flex flex-wrap justify-center items-center gap-[60px] max-w-[1000px]">
+                        <div class="Serviços-box border border-[#202020] bg-[#141414] w-[360px] h-[540px] flex flex-col gap-[30px] justify-start pt-[36px] pl-[30px]">
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-white font-sans text-[20px]">Landing Page</h1>
+                                <p class="text-[#8B8B8B] font-sans text-[16px] max-w-[280px]">Site de página única contendo a apresentação
+                                    e informações básicas sobre a empresa ou estabelecimento.
+                                </p>
+                            </div>
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-[#C5C5C5] font-sans text-[16px]">Contém:</h1>
+                                <ul class="text-[#8B8B8B] text-[16px] font-sans list-disc pl-[20px]">
+                                    <li>Landing Page Design.</li>
+                                    <li>1 Página.</li>
+                                    <li>5 Seções.</li>
+                                    <li>Responsividade.</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-[#C5C5C5] font-sans text-[16px]">Extras (Opcional):</h1>
+                                <ul class="text-[#8B8B8B] text-[16px] font-sans list-disc pl-[20px]">
+                                    <li>R$ 100,00/Seçao.</li>
+                                    <li>R$ 85,00 Animações de Scroll.</li>
+                                </ul>
+                            </div>
+                            <div class="font-sans text-white text-[20px] flex justify-start items-center gap-[10px]">
+                                <img src="./assets/CoinICON.svg"/>R$ 750,00
+                            </div>
+                        </div>
+                        <div class="Serviços-box border border-[#202020] bg-[#141414] w-[360px] h-[540px] flex flex-col gap-[30px] justify-start pt-[36px] pl-[30px]">
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-white font-sans text-[20px]">Site institucional</h1>
+                                <p class="text-[#8B8B8B] font-sans text-[16px] max-w-[310px]">
+                                    Um site institucional é a vitrine digital de uma empresa,
+                                    apresentando seus valores, serviços e informações essenciais.
+                                </p>
+                            </div>
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-[#C5C5C5] font-sans text-[16px]">Contém:</h1>
+                                <ul class="text-[#8B8B8B] text-[16px] font-sans list-disc pl-[20px]">
+                                    <li>Website Design.</li>
+                                    <li>2-5 Páginas.</li>
+                                    <li>2-4 Seções por página.</li>
+                                    <li>Responsividade.</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-[#C5C5C5] font-sans text-[16px]">Extras (Opcional):</h1>
+                                <ul class="text-[#8B8B8B] text-[16px] font-sans list-disc pl-[20px]">
+                                    <li>R$ 250,00/Página.</li>
+                                    <li>R$ 235,00 Animações de Scroll.</li>
+                                </ul>
+                            </div>
+                            <div class="font-sans text-white text-[20px] flex justify-start items-center gap-[10px]">
+                                <img src="./assets/CoinICON.svg"/>R$ 1455,00
+                            </div>
+                        </div>
+                        <div class="Serviços-box border border-[#202020] bg-[#141414] w-[360px] h-[540px] flex flex-col gap-[30px] justify-start pt-[36px] pl-[30px]">
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-white font-sans text-[20px]">E-commerce</h1>
+                                <p class="text-[#8B8B8B] font-sans text-[16px] max-w-[300px]">
+                                    Um e-commerce permite realizar vendas online e integrar
+                                    seu estoque, facilitando a gestão e ampliando seus negócios.
+                                </p>
+                            </div>
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-[#C5C5C5] font-sans text-[16px]">Contém:</h1>
+                                <ul class="text-[#8B8B8B] text-[16px] font-sans list-disc pl-[20px]">
+                                    <li>E-commerce design.</li>
+                                    <li>Pagamentos integrado.</li>
+                                    <li>Seçao de apresentaçao.</li>
+                                    <li>Responsividade.</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-[#C5C5C5] font-sans text-[16px]">Extras (Opcional):</h1>
+                                <ul class="text-[#8B8B8B] text-[16px] font-sans list-disc pl-[20px]">
+                                    <li>R$ 1250,00 Site institucional.</li>
+                                    <li>R$ 350,00 integração com iFood</li>
+                                </ul>
+                            </div>
+                            <div class="font-sans text-white text-[20px] flex justify-start items-center gap-[10px]">
+                                <img src="./assets/CoinICON.svg"/>R$ 3470,00
+                            </div>
+                        </div>
+                        <div class="Serviços-box border border-[#202020] bg-[#141414] w-[360px] h-[540px] flex flex-col gap-[30px] justify-start pt-[36px] pl-[30px]">
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-white font-sans text-[20px]">Aplicativo Mobile</h1>
+                                <p class="text-[#8B8B8B] font-sans text-[16px] max-w-[280px]">Aplicativo mobile com abas e seções sobre seu estabelecimento ou produto,
+                                    permitindo vendas diretamente pelo app.
+                                </p>
+                            </div>
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-[#C5C5C5] font-sans text-[16px]">Contém:</h1>
+                                <ul class="text-[#8B8B8B] text-[16px] font-sans list-disc pl-[20px]">
+                                    <li>App Design.</li>
+                                    <li>4 Abas.</li>
+                                    <li>Seu App na PlayStore.</li>
+                                    <li>Compativel Com Android</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col justify-start gap-[20px]">
+                                <h1 class="text-[#C5C5C5] font-sans text-[16px]">Extras (Opcional):</h1>
+                                <ul class="text-[#8B8B8B] text-[16px] font-sans list-disc pl-[20px]">
+                                    <li>R$ 1150,00 Compatibilidade com IOS.</li>
+                                    <li>R$ 285,00 Animações ..</li>
+                                </ul>
+                            </div>
+                            <div class="font-sans text-white text-[20px] flex justify-start items-center gap-[10px]">
+                                <img src="./assets/CoinICON.svg"/>R$ 3800,00
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <section id="Contact-us" class="Contact-us flex flex-col gap-[75px] pl-[15px] pr-[15px] pt-[80px] pb-[200px] justify-center items-center w-full">
+            <h2 class="font-display text-[24px] text-[#EDEDED] font-semibold text-center">Contato<span
+                style="color: #DD2323;"> :</span>
+            </h2>
+
+            <form class="Contact-us-form flex flex-col max-w-[620px] w-full space-y-5" action="https://formspree.io/f/mvgprvao" method="post">
+                <div class="flex flex-col space-y-2">
+                    <label for="nome" class="text-[#8B8B8B] font-sans">Nome</label>
+                    <input type="text" id="nome" name="nome" required class="text-[#8B8B8B] font-sans w-full h-[35px] bg-transparent border border-[#202020] rounded-[4px] focus:outline-none">
+                </div>
+                <div class="flex gap-[24px]">
+                    <div class="flex-1 flex flex-col space-y-2">
+                        <label for="email" class="text-[#8B8B8B] font-sans">Email</label>
+                        <input type="email" id="email" name="email" required class="text-[#8B8B8B] font-sans w-full h-[35px] bg-transparent border border-[#202020] rounded-[4px] focus:outline-none">
+                    </div>
+                    <div class="flex-1 flex flex-col space-y-2">
+                        <label for="telefone" class="text-[#8B8B8B] font-sans">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required class="text-[#8B8B8B] font-sans w-full h-[35px] bg-transparent border border-[#202020] rounded-[4px] focus:outline-none">
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label for="mensagem" class="text-[#8B8B8B] font-sans">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" required class="text-[#8B8B8B] font-sans w-full h-[100px] bg-transparent border border-[#202020] rounded-[4px] focus:outline-none"></textarea>
+                </div>
+                <div></div>
+                <button type="submit" class="text-[#8B8B8B] border-solid bg-transparent border flex w-[130px] h-[40px]
+                    border-[#444444] rounded-[4px] items-center justify-center gap-2 self-start" >
+                    Enviar<img src="./assets/Arrow.svg"/>
+                </button>
+            </form>
+        </section>
+
+        <section id="SideMenu-Desktop" class="bg-[#141414] fixed top-[100px] right-[40px] max-[800px]:hidden
+        border-[#1E1E1E] border-solid border-[1px] rounded-[40px] w-auto h-auto flex-col justify-center items-center">
+
+            <div class="flex flex-col gap-[10px] px-[7px] py-[7px] justify-center items-center">
+                <a href="https://www.facebook.com/profile.php?id=61563949748228&mibextid=kFxxJD" target="_blank" class="bg-[#181818] rounded-full"><img class="p-[8px]" src="./assets/FacebookICON.svg"></a>
+                <a href="https://www.instagram.com/catalystcode.oficial?igsh=MWdvemdodGUxdmxkeg==" target="_blank" class="bg-[#181818] rounded-full"><img class="p-[8px]" src="./assets/InstagramICON.svg"></a>
+                <a href="https://x.com/Catalystcodeofc?t=APA9t_yuYx6sFVC3OF49BQ&s=09" target="_blank" class="bg-[#181818] rounded-full"><img class="p-[8px]" src="./assets/TwitterICON.svg"></a>
+                <a href="mailto:catalystcode.oficial@gmail.com" class="bg-[#181818] rounded-full"><img class="p-[8px]" src="./assets/EmailICON.svg"></a>
+            </div>
+        </section>
+
+        <section id="ArrowTop-Desktop" class="bg-[#141414] fixed bottom-[50px] right-[40px] max-[800px]:hidden
+        border-[#1E1E1E] border-solid border-[1px] rounded-[40px] w-auto h-auto flex-col justify-center items-center">
+
+            <div class="flex flex-col gap-[10px] px-[7px] py-[7px] justify-center items-center">
+                <a href="#Home-Header" class="bg-[#181818] rounded-full"><img class="p-[8px]" src="./assets/ArrowTop.svg"></a>
+            </div>
+        </section>
+
+        <section id="Menu-Mobile" class="bg-[#181818] fixed bottom-[0px] self-center min-[800px]:hidden
+            w-full h-[65px] flex justify-around items-center">
+            <a href="#Home-Header" class="flex flex-col gap-[3px] items-center justify-center font-sans font-[400] text-[#B8B8B8] text-[13px] w-auto">
+                <img class="w-[23px]" src="./assets/HomeMOBILE.svg">Home
+            </a>
+            <a href="#Projects" class="flex flex-col gap-[3px] items-center justify-center font-sans font-[400] text-[#B8B8B8] text-[13px] w-auto">
+                <img class="w-[23px]" src="./assets/ProjectsMOBILE.svg">Projetos
+            </a>
+            <a href="#Serviços" class="flex flex-col gap-[3px] items-center justify-center font-sans font-[400] text-[#B8B8B8] text-[13px] w-auto]">
+                <img class="w-[23px]" src="./assets/ServicesMOBILE.svg">Serviços
+            </a>
+            <a href="#Contact-us" class="flex flex-col gap-[3px] items-center justify-center font-sans font-[400] text-[#B8B8B8] text-[13px] w-auto">
+                <img class="w-[23px]" src="./assets/ContactMOBILE.svg">Contato
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-[#161616] flex flex-col gap-[75px] justify-center items-center pl-[40px] pr-[40px]">
+        <div class="flex justify-between items-center w-full pt-[60px] max-[800px]:flex-col max-[800px]:justify-center max-[800px]:gap-[30px]">
+            <div class="w-[184px] flex justify-start max-[800px]:w-auto">
+                <img src="./assets/CatalystCodeICON.png"/>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-[20px]">
+                <h1 class="text-center font-sans text-[#BEBEBE] text-[16px]">CatalystCode@gmail.com</h1>
+                <h2 class="text-center font-sans text-[#BEBEBE] text-[16px]">@CatalystCode</h1>
+            </div>
+            <div class="w-[184px] flex justify-end max-[800px]:w-auto">
+                <a href="#Serviços" class="text-[#8B8B8B] border-solid border-[0.8px]
+                border-[#444444] w-24 h-8 rounded-md flex items-center justify-center gap-2">Serviços <img src="./assets/Arrow.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="w-full flex flex-col gap-[30px]">
+            <div class="flex flex-row gap-[20px] justify-center items-center">
+                <a href="https://www.facebook.com/profile.php?id=61563949748228&mibextid=kFxxJD" target="_blank"><img src="./assets/FacebookICON.svg"/></a>
+                <a href="https://www.instagram.com/catalystcode.oficial?igsh=MWdvemdodGUxdmxkeg==" target="_blank"><img src="./assets/InstagramICON.svg"/></a>
+                <a href="https://x.com/Catalystcodeofc?t=APA9t_yuYx6sFVC3OF49BQ&s=09" target="_blank"><img src="./assets/TwitterICON.svg"/></a>
+                <a href="mailto:catalystcode.oficial@gmail.com"><img src="./assets/EmailICON.svg"/></a>
+            </div>
+            <hr class="w-full border-[#202020]"/>
+        </div>
+        <div>
+            <p class="text-center text-[14px] text-[#444444] pb-[40px]">Copyright @CatalystCode 2024</p>
+        </div>
+    </footer>
+
+</body>
+</html>
