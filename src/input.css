@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 
+.scroll-container {
+}
+.scroll-container::before, .scroll-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    pointer-events: none;
+    z-index: 10;
+}
+.scroll-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0));
+}
+.scroll-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0));
+}

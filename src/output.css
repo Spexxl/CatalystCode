@@ -662,13 +662,13 @@ video {
   width: auto;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-\[1000px\] {
@@ -677,6 +677,10 @@ video {
 
 .max-w-\[280px\] {
   max-width: 280px;
+}
+
+.max-w-\[3000px\] {
+  max-width: 3000px;
 }
 
 .max-w-\[300px\] {
@@ -707,12 +711,26 @@ video {
   max-width: 620px;
 }
 
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
 .max-w-\[860px\] {
   max-width: 860px;
 }
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(calc(-100% - 55px));
+  }
+}
+
+.animate-scrollRight {
+  animation: scrollRight 12s linear infinite;
 }
 
 .list-disc {
@@ -831,8 +849,16 @@ video {
   align-self: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-\[40px\] {
@@ -1064,11 +1090,6 @@ video {
   font-size: 40px;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-\[400\] {
   font-weight: 400;
 }
@@ -1134,18 +1155,32 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.transition-\[0\.8s\] {
-  transition-property: 0.8s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.text-\[\#EC4545\] {
+  --tw-text-opacity: 1;
+  color: rgb(236 69 69 / var(--tw-text-opacity));
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.scroll-container {
+}
+
+.scroll-container::before, .scroll-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.scroll-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0));
+}
+
+.scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0));
 }
 
 .after\:absolute::after {
@@ -1158,29 +1193,9 @@ video {
   display: block;
 }
 
-.after\:flex::after {
-  content: var(--tw-content);
-  display: flex;
-}
-
-.after\:h-\[2px\]::after {
-  content: var(--tw-content);
-  height: 2px;
-}
-
-.after\:h-2::after {
-  content: var(--tw-content);
-  height: 0.5rem;
-}
-
 .after\:h-\[3px\]::after {
   content: var(--tw-content);
   height: 3px;
-}
-
-.after\:w-0::after {
-  content: var(--tw-content);
-  width: 0px;
 }
 
 .after\:w-full::after {
@@ -1197,18 +1212,6 @@ video {
   content: var(--tw-content);
   --tw-scale-x: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.after\:bg-red-600::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.after\:bg-black::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .after\:bg-\[\#DD2323\]::after {
@@ -1231,33 +1234,9 @@ video {
   transition-duration: 300ms;
 }
 
-.after\:content-none::after {
-  --tw-content: none;
-  content: var(--tw-content);
-}
-
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
-}
-
-.hover\:w-full:hover {
-  width: 100%;
-}
-
-.hover\:after\:w-\[100\]:hover::after {
-  content: var(--tw-content);
-  width: 100;
-}
-
-.hover\:after\:w-\[100\%\]:hover::after {
-  content: var(--tw-content);
-  width: 100%;
-}
-
-.hover\:after\:w-full:hover::after {
-  content: var(--tw-content);
-  width: 100%;
 }
 
 .after\:hover\:scale-x-100:hover::after {
@@ -1319,12 +1298,6 @@ video {
   }
 }
 
-@media (max-width: 500px) {
-  .max-\[500px\]\:gap-\[30px\] {
-    gap: 30px;
-  }
-}
-
 @media (max-width: 400px) {
   .max-\[400px\]\:invisible {
     visibility: hidden;
@@ -1340,5 +1313,3 @@ video {
     display: none;
   }
 }
-
-

@@ -10,14 +10,13 @@ module.exports = {
         sans: ["Roboto", 'sans-serif'],
         display: ["Roboto Serif", 'serif'],
       },
-      animation: {
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
-      },
       keyframes: {
-        'infinite-scroll': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
-        }
+        scrollRight: {
+          '0%': { transform: 'translateX(calc(-100% - 55px))' },
+        },
+      },
+      animation: {
+        scrollRight: 'scrollRight 12s linear infinite',
       },
     },
   },
