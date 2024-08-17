@@ -1160,6 +1160,11 @@ video {
   color: rgb(236 69 69 / var(--tw-text-opacity));
 }
 
+.text-\[\#363636\] {
+  --tw-text-opacity: 1;
+  color: rgb(54 54 54 / var(--tw-text-opacity));
+}
+
 .scroll-container {
 }
 
