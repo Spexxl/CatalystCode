@@ -1106,9 +1106,9 @@ video {
   font-weight: 600;
 }
 
-.text-\[\#242424\] {
+.text-\[\#363636\] {
   --tw-text-opacity: 1;
-  color: rgb(36 36 36 / var(--tw-text-opacity));
+  color: rgb(54 54 54 / var(--tw-text-opacity));
 }
 
 .text-\[\#444444\] {
@@ -1153,16 +1153,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#EC4545\] {
-  --tw-text-opacity: 1;
-  color: rgb(236 69 69 / var(--tw-text-opacity));
-}
-
-.text-\[\#363636\] {
-  --tw-text-opacity: 1;
-  color: rgb(54 54 54 / var(--tw-text-opacity));
 }
 
 .scroll-container {
